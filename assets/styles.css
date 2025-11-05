@@ -761,6 +761,73 @@ h6 {
   font-size: 0.9rem;
 }
 
+.contact-modal{
+  position: fixed;
+  z-index: 999;
+  background-color: rgba(0,0,0, 50%);
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-modal__box{
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  padding: 3rem;
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-modal__close-icon{
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  font-size: 2rem;
+  color: crimson;
+  cursor: pointer;
+}
+
+.contact-modal__close-icon:hover {
+  transform: scale(1.05);
+  color: red;
+}
+
+.contact-modal__mail-container{
+  width: 100%;
+  text-align: center;
+}
+
+.contact-modal__mail-icon{
+  font-size: 4rem;
+  color: black;
+}
+
+.contact-modal__heading{
+  font-size: 2.5rem;
+  text-align: center;
+  margin-block: 0.5rem;
+}
+
+.contact-modal__feedback{
+  font-weight: 500;
+  text-align: center;
+  margin-bottom:  2rem;
+}
+
+.contact-modal__button-container{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* Responsive design */
 @media (max-width: 768px) {
   .nav-container {
@@ -915,4 +982,17 @@ h6 {
   .footer-bottom {
     padding: 1rem;
   }
+
+  .contact-modal__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    height: 100vh;
+    border-radius: 0;
+  }
+}
+
+.hidden {
+  display: none;
 }

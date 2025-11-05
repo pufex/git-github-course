@@ -4,8 +4,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contact - 8.BIT.BLOG</title>
     <link rel="stylesheet" href="assets/styles.css" />
+    <script src="https://kit.fontawesome.com/e6c6316852.js" crossorigin="anonymous"></script>
   </head>
   <body>
+
+    <div class="contact-modal">
+      <div class="contact-modal__box">
+        <i class="contact-modal__close-icon fa-solid fa-xmark"></i>
+        <div class="contact-modal__mail-container">
+          <i class="contact-modal__mail-icon fa-solid fa-envelope"></i>
+        </div>
+        <h3 class="contact-modal__heading">
+          Thank you!
+        </h3>
+        <p class="contact-modal__feedback">
+          Your message has been sent successfully! We'll get back to you within 24-48 hours.
+        </p>
+        <div class="contact-modal__button-container">
+          <button class="contact-submit-btn contact-modal__close-btn">
+            Close
+          </button>
+        </div>
+      </div>
+    </div>
+
     <nav class="navbar">
       <div class="nav-container">
         <a href="index.html" class="nav-logo">8.BIT.BLOG</a>
@@ -38,7 +60,7 @@
           <!-- Contact Form Section -->
           <div class="contact-form-section">
             <h2>Send us a Message</h2>
-            <form class="contact-form" action="#" method="POST">
+            <form class="contact-form" id="contact-form-id">
               <div class="form-row">
                 <div class="form-group">
                   <label for="name">Name *</label>
@@ -246,5 +268,6 @@
         <p>&copy; 2024 8.BIT.BLOG. All rights reserved.</p>
       </div>
     </footer>
+    <script src="assets/script.js" type="text/javascript"></script>
   </body>
 </html>
