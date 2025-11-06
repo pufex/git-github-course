@@ -140,17 +140,20 @@
 
     <section class="newsletter">
       <form action="">
-        <label for="email">
-          Subscribe to out newsletter:
-        </label>
-        <input 
-          type="email"
-          id="email"
-          name="email"
-          placeholder="Enter your email"
-          required
-        />
-        <button type="submit">
+        <div class="newsletter__input-container">
+          <label for="email" class="newsletter__input-label">
+            Subscribe to out newsletter:
+          </label>
+          <input 
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            class="newsletter__input"
+            required
+          />
+        </div>
+        <button type="submit" class="newsletter__submit-btn">
           Subscribe
         </button>
       </form>
